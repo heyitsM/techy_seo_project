@@ -1,6 +1,7 @@
 import requests
 
-URL = "https://techy-api.vercel.app/api/json"
+TECHY_API_URL = "https://techy-api.vercel.app/api/json"
 
-response = requests.get(URL)
-print(response.json())
+techy_response = requests.get(TECHY_API_URL).json()
+
+print(techy_response['message'])
